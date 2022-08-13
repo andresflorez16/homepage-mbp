@@ -3,7 +3,7 @@ import { ScrollContext } from '../utils/scroll-observer'
 import { 
   Box,
   Heading,
-  Text
+  Text,
 } from '@chakra-ui/react'
 
 export const AboutMe = () => {
@@ -28,17 +28,21 @@ export const AboutMe = () => {
       alignItems='center'
       position='sticky'
       top='0'
-      zIndex={progress > 0.64 ? '-10' : '1'}
+      zIndex={progress > 0.61 ? '-10' : '0'}
       style={{
         transform: `translateY(-${progress * 20}vh)`,
       }}
     >
       <Heading 
-        color='black'
-        zIndex='11'
+        opacity={progress > 0.30 ? '0.2' : '1'}
+        transition={`opacity .2s ease-out`}
+        variant='_title'
       >
-        About me
+        Andrés Florez
       </Heading>
+      <Text variant='_section'>
+        App Developer
+      </Text>
     </Box>
   )
 }

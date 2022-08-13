@@ -4,11 +4,12 @@ import {
   useColorMode
 } from '@chakra-ui/react'
 
-export const Experience = () => {
+export const Bio = () => {
   const { colorMode } = useColorMode()
+
   return (
     <Box
-      bg={colorMode === 'light' ? 'smoothTeal' : '#333'}
+      bg={colorMode === 'light' ? '#63B7AF' : '#444'}
       minH='100vh'
       display='flex'
       justifyContent='center'
@@ -16,7 +17,7 @@ export const Experience = () => {
       color='#fff'
     >
       <Heading>
-        Experience
+        Bio
       </Heading>
     </Box>
   )

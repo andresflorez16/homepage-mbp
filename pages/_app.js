@@ -1,10 +1,10 @@
 import ScrollObserver from '../utils/scroll-observer'
 import { ChakraProvider } from '@chakra-ui/react'
-import '../styles/globals.css'
+import theme from '../lib/theme'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <ScrollObserver>
         <Component {...pageProps} />
       </ScrollObserver>

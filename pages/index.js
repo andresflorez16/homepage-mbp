@@ -2,24 +2,19 @@ import { AboutMe } from '../components/aboutme'
 import { Experience } from '../components/experience'
 import { 
   Box,
-  Text
 } from '@chakra-ui/react'
+import { Bio } from '../components/bio'
+import { Navbar } from '../components/navbar'
 
-export default function Home() {
+function Home() {
   return (
     <Box>
-      <Box
-        w='100%'
-        p={5}
-        position='fixed'
-        top='0'
-        bg='#333'
-      >
-        <Text color='#fff'>Navbar</Text>
-      </Box>
+      <Navbar />
       <AboutMe />
       <Experience />
-      <Experience />
+      <Bio />
     </Box>
   )
 }
+
+export default Home
