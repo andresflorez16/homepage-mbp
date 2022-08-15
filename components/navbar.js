@@ -1,9 +1,10 @@
+import NextLink from 'next/link'
 import { 
   Box,
   useColorModeValue,
   useColorMode,
-  Text,
-  Button
+  Button,
+  Link
 } from '@chakra-ui/react'
 
 export const Navbar = () => {
@@ -21,7 +22,12 @@ export const Navbar = () => {
       zIndex='20'
       css={{ backdropFilter: 'blur(10px)' }}
     >
-      <Text variant='_section'>Navbar</Text>
+      <NextLink href='/'>
+        <Link>Home</Link>
+      </NextLink>
+      <NextLink href='/works'>
+        <Link>Works</Link>
+      </NextLink>
       <Button onClick={toggleColorMode}>
         Theme { colorMode === 'light' ? 'dark': 'light' }
       </Button>
