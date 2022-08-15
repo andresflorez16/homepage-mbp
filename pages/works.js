@@ -1,12 +1,9 @@
 import { Box, Heading } from '@chakra-ui/react'
+import { AboutMe } from '../components/aboutme'
 
 const Works = () => {
   return (
-    <Box>
-      <Heading variant='_title'>
-        Works
-      </Heading>
-    </Box>
+    <AboutMe />
   )
 }
 
