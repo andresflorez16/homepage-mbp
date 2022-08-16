@@ -9,8 +9,11 @@ import {
 import { Section } from './section'
 
 const Skill = ({ skill, src }) => (
-  <Box>
-    <Image src={`/techs/${src}`} m='0 auto' alt={skill} width={{ base: '47', md: '90' }} height={{ base: '47', md: '90', xl: '90' }} />
+  <Box
+    _hover={{ transform: 'rotate(10deg)' }}
+    transition='transform .5 ease'
+  >
+    <Image src={`/techs/${src}`} m='0 auto' alt={skill} width={{ base: '47', sm: '55', md: '82' }} height={{ base: '47', sm: '55', md: '82' }} />
     <Text>{skill}</Text>
   </Box>
 )
@@ -29,7 +32,7 @@ export const Skills = () => {
         <Heading variant='_title' textAlign='center'>
           Skills
         </Heading>
-        <SimpleGrid w={{ base: '99%', sm: '90%', md: '60%' }} m='0 auto' columns={2} >
+        <SimpleGrid w={{ base: '99%', sm: '90%', md: '40%' }} m='0 auto' columns={2} >
           <Box textAlign='center'>
             <Text variant='_section_skills' m={5}>Frontend</Text>
             <SimpleGrid columns={2} spacing={2}>

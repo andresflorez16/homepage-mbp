@@ -1,5 +1,6 @@
 import { Box } from '@chakra-ui/react'
 import { Navbar } from '../navbar'
+import { Scene } from '../voxel'
 
 export const Layout = ({ children }) => {
   return (
