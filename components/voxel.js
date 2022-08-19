@@ -14,9 +14,9 @@ export const Scene = () => {
   const [target] = useState(new THREE.Vector3(-0.5, 5, 0))
   const [initialCameraPosition] = useState(
     new THREE.Vector3(
-      20 * Math.sin(0.2 * Math.PI),
-      10,
-      20 * Math.cos(0,2 * Math.PI)
+      10 * Math.sin(0.2 * Math.PI),
+      8,
+      10 * Math.cos(0,2 * Math.PI)
     )
   )
   const [scene] = useState(new THREE.Scene())
@@ -45,7 +45,7 @@ export const Scene = () => {
       container.appendChild(renderer.domElement)
       setRenderer(renderer)
 
-      const scale = screenH * 0.005 + 4.8
+      const scale = screenH * 0.01 + 5
       const camera = new THREE.OrthographicCamera(
         -scale,
         scale,
@@ -87,7 +87,7 @@ export const Scene = () => {
         if (frame <= 100) {
           const pos = initialCameraPosition
           const rotSpeed = easeOutCircle(frame / 120) * Math.PI * 20
-          camera.position.y = 10
+          camera.position.y = 8
           camera.position.x = pos.x * Math.cos(rotSpeed) + pos.x * Math.sin(rotSpeed)
           camera.position.z = pos.z * Math.cos(rotSpeed) - pos.z * Math.sin(rotSpeed)
           camera.lookAt(target)
