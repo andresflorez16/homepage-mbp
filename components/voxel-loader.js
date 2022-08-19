@@ -14,8 +14,8 @@ export const ModelLoader = forwardRef(({ children }, ref) => (
   <Box
     ref={ref}
     m='0 auto'
-    w={[280, 320, 400]}
-    h={[280, 320, 400]}
+    w={[280, 320, 420]}
+    h={[280, 320, 420]}
     position='relative'
     bg={useColorModeValue('#CCF2F4', '#222')}
   >

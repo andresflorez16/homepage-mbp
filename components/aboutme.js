@@ -32,7 +32,7 @@ export const AboutMe = () => {
       ref={refContainer}
       minH={{ base: 'auto', md: '100vh' }}
       display='flex'
-      flexDir={[ 'column', 'column', 'column','row' ]}
+      flexDir={[ 'column', 'column', 'column', 'column', 'row' ]}
       justifyContent='center'
       alignItems='center'
       position={{ base: 'static', xl: 'sticky' }}
@@ -40,18 +40,23 @@ export const AboutMe = () => {
       zIndex={progress > 0.1 ? '-10' : '0'}
       w={{ base: 'full', md: '70%' }}
       m='0 auto'
+      mt={{ base: '10' }}
       p={15}
     >
       <Scene />
-      <Box >
+      <Box
+        w={{ base: '92%', sm: '90%', md: '95%', xl: '60%' }}
+      >
         <Section delay={0.3}>
           <Box
             m='0 auto'
-            p={3}
+            p={2}
             borderRadius='lg'
             bg='gray.300'
             textAlign='center'
             mb={3}
+            mt={3}
+            w={{ base: 'full' }}
           >
             <Text color='#111' fontSize={15}>Hi, i'm an app developer based in Colombia!</Text>
           </Box>
@@ -60,10 +65,8 @@ export const AboutMe = () => {
             display='flex'
             justifyContent='space-between'
             alignItems='center'
-            w={{ base: '92%', md: '80%' }}
           >
-            <Heading 
-            >
+            <Heading size={{ base: 'lg' }}>
               Andrés Florez
               <Text fontSize='md' fontWeight='normal'>
                 App Developer
@@ -84,10 +87,9 @@ export const AboutMe = () => {
           <Box 
             m='0 auto' 
             mt={3} 
-            w='80%'
             textAlign='justify'
           >
-            <Text fontSize={17}>Andrés is a freelance and full-stack developer who loves planning, designing and find ways to solve real-life problems with code, furthermore he has a knack for fast-learning and autonomous learning. When not online, he likes go to the gym, hang out, listen music, and watch movies/series.</Text>
+            <Text fontSize={['sm', 'md']}>Andrés is a freelance and full-stack developer who loves planning, designing and find ways to solve real-life problems with code, furthermore he has a knack for fast-learning and autonomous learning. When not online, he likes go to the gym, hang out, listen music, and watch movies/series.</Text>
           </Box>
         </Section>
       </Box>
