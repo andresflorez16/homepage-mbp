@@ -5,7 +5,6 @@ import {
   Heading,
   Text,
   chakra,
-  useColorModeValue
 } from '@chakra-ui/react'
 import { ScrollContext } from '../utils/scroll-observer'
 import { Section } from './section'
