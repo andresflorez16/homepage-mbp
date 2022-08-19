@@ -5,7 +5,6 @@ import {
   Heading,
   Text,
   chakra,
-  useColorModeValue
 } from '@chakra-ui/react'
 import { ScrollContext } from '../utils/scroll-observer'
 import { Section } from './section'
@@ -58,7 +57,7 @@ export const AboutMe = () => {
             mt={3}
             w={{ base: 'full' }}
           >
-            <Text color='#111' fontSize={15}>Hi, i'm an app developer based in Colombia!</Text>
+            <Text color='#111' fontSize={{ base: 15, xl: 17 }}>Hi, i'm an app developer based in Colombia!</Text>
           </Box>
           <Box
             m='0 auto'
@@ -89,7 +88,7 @@ export const AboutMe = () => {
             mt={3} 
             textAlign='justify'
           >
-            <Text fontSize={['sm', 'md']}>Andrés is a freelance and full-stack developer who loves planning, designing and find ways to solve real-life problems with code, furthermore he has a knack for fast-learning and autonomous learning. When not online, he likes go to the gym, hang out, listen music, and watch movies/series.</Text>
+            <Text fontSize={['sm', 'md', 'lg']}>Andrés is a freelance and full-stack developer who loves planning, designing and find ways to solve real-life problems with code, furthermore he has a knack for fast-learning and autonomous learning. When not online, he likes go to the gym, hang out, listen music, and watch movies/series.</Text>
           </Box>
         </Section>
       </Box>
