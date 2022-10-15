@@ -7,15 +7,11 @@ import {
 } from '@chakra-ui/react'
 import { Section } from './section'
 import SliderContainer, { SliderItem } from './slider'
-import { skillsFile } from '../utils/skills-files'
+import { skillsFrontend, skillsBackend, skillsCloud } from '../utils/skills-files'
 
-const Skill = ({ skill, src }) => (
-  <Box
-    w='100%'
-    _hover={{ transform: 'rotate(10deg)' }}
-    transition='transform .5 ease'
-  >
-    <Image src={`/techs/${src}`} m='0 auto' alt={skill} width={{ base: '47', sm: '55', md: '82' }} height={{ base: '47', sm: '55', md: '82' }} />
+const Skill = ({ skill, src, width }) => (
+  <Box>
+    <Image src={`/techs/${src}`} alt={skill} width={width} />
     <Text>{skill}</Text>
   </Box>
 )
@@ -35,16 +31,35 @@ export const Skills = () => {
         <Heading variant='_title' textAlign='center'>
           Skills
         </Heading>
-        <Box textAlign='center' w='100%'>
+        <Box
+          textAlign='center'
+        >
           <Text variant='_section_skills' m={5}>Frontend</Text>
+          <SliderContainer
+            contentWidth={1270}
+            initialOffsetX={0}
+          >
+            {
+              skillsFrontend.map(( skill, i ) => (
+                <SliderItem width={100} key={i}>
+                  <Skill width={100} skill={skill.skill} src={skill.path} />
+                </SliderItem>
+              ))
+            }
+          </SliderContainer>
+        </Box>
+        <Box
+          textAlign='center'
+        >
+          <Text variant='_section_skills' m={5}>Backend/DB/Cloud</Text>
           <SliderContainer
             contentWidth={1290}
             initialOffsetX={0}
           >
             {
-              skillsFile.map(( skill, i ) => (
-                <SliderItem width={150} key={i}>
-                  <Image src={`/techs/${skill.path}`} w={150} />
+              skillsBackend.map(( skill, i ) => (
+                <SliderItem width={100} key={i}>
+                  <Skill width={100} skill={skill.skill} src={skill.path} />
                 </SliderItem>
               ))
             }

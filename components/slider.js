@@ -10,7 +10,7 @@ export const SliderItem = ({ children, width }) => {
       justifyContent='center'
       alignItems='center'
       w={width}
-      mx={10}
+      mx={5}
     >
       {children}
     </Box>
@@ -24,6 +24,7 @@ const SliderContainer = ({ children, initialOffsetX, contentWidth }) => {
   const refContent = useRef(null)
 
   const enabled = innerWidth < contentWidth
+  console.log(enabled)
 
   useAnimationFrame(
     enabled,
@@ -32,7 +33,7 @@ const SliderContainer = ({ children, initialOffsetX, contentWidth }) => {
       const { current: elContent } = refContent
 
       if (elContainer && elContent) {
-        refScrollX.current += 2
+        refScrollX.current += 1
         elContainer.scrollLeft = refScrollX.current
         if (elContainer.scrollLeft >= elContent.clientWidth) {
           refScrollX.current = 0
@@ -49,12 +50,16 @@ const SliderContainer = ({ children, initialOffsetX, contentWidth }) => {
       whiteSpace='nowrap'
       pointerEvents='none'
       textAlign='center'
-      w='100%'
+      maxW='100%'
     >
       <Box
         ref={refContent}
-        w='200%'
-        bg='red'
+        display='inline-block'
+      >
+        {children}
+      </Box>
+      <Box
+        display={enabled ? 'inline-block' : 'none'}
       >
         {children}
       </Box>
