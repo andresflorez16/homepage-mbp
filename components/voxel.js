@@ -14,9 +14,9 @@ export const Scene = () => {
   const [target] = useState(new THREE.Vector3(-0.5, 5, 0))
   const [initialCameraPosition] = useState(
     new THREE.Vector3(
-      10 * Math.sin(0.2 * Math.PI),
-      8,
-      10 * Math.cos(0,2 * Math.PI)
+      20 * Math.sin(0.2 * Math.PI),
+      18,
+      20 * Math.cos(0,2 * Math.PI)
     )
   )
   const [scene] = useState(new THREE.Scene())
@@ -108,6 +108,7 @@ export const Scene = () => {
 
     return () => window.removeEventListener('resize', handleResize)
   }, [renderer, handleResize])
+
   return (
     <ModelLoader ref={containerRef}>
       {loading && <Loading />}

@@ -1,16 +1,16 @@
-import { AboutMe } from '../components/aboutme'
-import { Skills } from '../components/skills'
 import { 
   Box,
 } from '@chakra-ui/react'
-import { Bio } from '../components/bio'
+import { AboutMe } from '../components/aboutme'
+import { Skills } from '../components/skills'
+import { Posts } from '../components/posts'
 
 function Home() {
   return (
     <Box>
       <AboutMe />
       <Skills />
-      <Bio />
+      <Posts />
     </Box>
   )
 }

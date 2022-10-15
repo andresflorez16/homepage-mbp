@@ -4,17 +4,20 @@ import theme from '../lib/theme'
 import { Layout } from '../components/layouts/main'
 import Fonts from '../components/fonts'
 import ScrollObserver from '../utils/scroll-observer'
+import SizeObserver from '../utils/size-observer'
 
 function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider theme={theme}>
       <Fonts />
       <AnimatePresence exitBeforeEnter initial={true}>
-        <Layout>
-          <ScrollObserver>
-              <Component {...pageProps} />
-          </ScrollObserver>
-        </Layout>
+        <SizeObserver>
+          <Layout>
+            <ScrollObserver>
+                <Component {...pageProps} />
+            </ScrollObserver>
+          </Layout>
+        </SizeObserver>
       </AnimatePresence>
     </ChakraProvider>
   )

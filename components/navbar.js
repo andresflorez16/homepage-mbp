@@ -1,36 +1,40 @@
-import NextLink from 'next/link'
 import { 
   Box,
   useColorModeValue,
-  useColorMode,
-  Button,
-  Link
 } from '@chakra-ui/react'
+import { ToggleButton } from './toggle-button'
+import { LinkText } from './links'
+import { Logo } from './logo'
 
 export const Navbar = () => {
-  const { colorMode, toggleColorMode } = useColorMode()
 
   return (
     <Box
       w='100%'
-      p={5}
       position='fixed'
       top='0'
-      bg={useColorModeValue('#F4F9F999', '#1119')}
-      display='flex'
-      justifyContent='space-between'
       zIndex='20'
+      bg={useColorModeValue('smoothyTeal', 'hardDark')}
       css={{ backdropFilter: 'blur(10px)' }}
+      p={5}
     >
-      <NextLink href='/'>
-        <Link>Home</Link>
-      </NextLink>
-      <NextLink href='/works'>
-        <Link>Works</Link>
-      </NextLink>
-      <Button onClick={toggleColorMode}>
-        Theme { colorMode === 'light' ? 'dark': 'light' }
-      </Button>
+      <Box
+        w={{ base: 'full', sm: '90%', md: '60%', xl: '40%' }}
+        m='0 auto'
+        display='flex'
+        justifyContent='space-between'
+      >
+        <Logo />
+        <Box
+          display='flex'
+          alignItems='center'
+          gap={2}
+        >
+          <LinkText path='/'>Home</LinkText>
+          <LinkText path='/works'>Works</LinkText>
+          <ToggleButton />
+        </Box>
+      </Box>
     </Box>
   )
 }

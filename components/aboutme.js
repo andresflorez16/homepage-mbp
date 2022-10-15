@@ -39,7 +39,7 @@ export const AboutMe = () => {
       zIndex={progress > 0.1 ? '-10' : '0'}
       w={{ base: 'full', md: '70%' }}
       m='0 auto'
-      mt={{ base: '10' }}
+      mt={{ base: '10', md: '0' }}
       p={15}
     >
       <Scene />
@@ -75,7 +75,7 @@ export const AboutMe = () => {
               w={{ base: '100px', md: '150px' }}
               h={{ base: '100px', md: '150px' }}
               flexShrink={0}
-              borderColor='cyan'
+              borderColor='cyan.300'
               borderWidth={2}
               borderStyle='solid'
               borderRadius='full'

@@ -1,23 +1,22 @@
 import { 
   Box,
   Heading,
-  useColorMode
+  useColorModeValue
 } from '@chakra-ui/react'
 
-export const Bio = () => {
-  const { colorMode } = useColorMode()
+export const Posts = () => {
 
   return (
     <Box
-      bg={colorMode === 'light' ? '#63B7AF' : '#444'}
+      bg={useColorModeValue('hardTeal', 'smoothWhite')}
       minH='100vh'
       display='flex'
       justifyContent='center'
       alignItems='center'
-      color='#fff'
+      color='#000'
     >
       <Heading>
-        Bio
+        On web
       </Heading>
     </Box>
   )
