@@ -16,7 +16,6 @@ const ProfileImage = chakra(Image, {
 
 export const AboutMe = () => {
   const [imageLoaded, setImageLoaded] = useState(false)
-  console.log(imageLoaded)
   const refContainer = useRef(null)
   const { scrollY } = useContext(ScrollContext)
 
@@ -57,13 +56,13 @@ export const AboutMe = () => {
             m='0 auto'
             p={2}
             borderRadius='lg'
-            bg='gray.300'
+            bg='#4449'
             textAlign='center'
             mb={3}
             mt={3}
             w={{ base: 'full' }}
           >
-            <Text color='#111' fontSize={{ base: 15, xl: 17 }}>Hi, i'm an app developer based in Colombia!</Text>
+            <Text color='#fff' fontSize={{ base: 15, xl: 17 }}>Hi, i'm an app developer based in Colombia!</Text>
           </Box>
           <Box
             m='0 auto'

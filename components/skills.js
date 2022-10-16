@@ -34,13 +34,15 @@ const Skill = ({ skill, src, width }) => {
 export const Skills = () => {
   return (
     <Box
-      bg={useColorModeValue('smoothTeal', '#111')}
+      //bg={useColorModeValue('smoothTeal', '#111')}
+      bg={useColorModeValue('smoothTeal', 'smoothWhite')}
       minH='100vh'
       display='flex'
       justifyContent='center'
       alignItems='center'
       flexDir='column'
       w='100%'
+      color='#111'
     >
       <Section delay={0.3} w='100%' p={2}>
         <Heading variant='_title' textAlign='center'>

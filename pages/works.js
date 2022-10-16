@@ -1,9 +1,18 @@
 import { Box, Heading } from '@chakra-ui/react'
-import { AboutMe } from '../components/aboutme'
 
 const Works = () => {
   return (
-    <AboutMe />
+    <Box
+      display='flex'
+      minH='100vh'
+      justifyContent='center'
+      alignItems='center'
+      m='0 auto'
+      mt={{ base: '10', md: '0' }}
+      p={15}
+    >
+      <Heading>Works!</Heading>
+    </Box>
   )
 }
 

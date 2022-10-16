@@ -30,7 +30,6 @@ export const Navbar = () => {
           alignItems='center'
           gap={2}
         >
-          <LinkText path='/'>Home</LinkText>
           <LinkText path='/works'>Works</LinkText>
           <ToggleButton />
         </Box>
