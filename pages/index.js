@@ -3,14 +3,14 @@ import {
 } from '@chakra-ui/react'
 import { AboutMe } from '../components/aboutme'
 import { Skills } from '../components/skills'
-import { Posts } from '../components/posts'
+import { Web } from '../components/web'
 
 function Home() {
   return (
     <Box>
       <AboutMe />
       <Skills />
-      <Posts />
+      <Web />
     </Box>
   )
 }

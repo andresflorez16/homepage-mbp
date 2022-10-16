@@ -9,6 +9,7 @@ const LinkContainer = ({ children, path }) => {
     <NextLink href={path}>
       <Link
         textDecor={isPath ? 'underline' : 'none'}
+        fontWeight='bold'
       >{children}</Link>
     </NextLink>
   )

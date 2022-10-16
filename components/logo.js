@@ -12,6 +12,8 @@ export const Logo = () => {
           alt='Logo Andres Florez'
           m='-20px'
           mx={3}
+          _hover={{ transform: 'scale(0.9)' }}
+          transition='transform .2s ease'
         />
       </Link>
     </NextLink>

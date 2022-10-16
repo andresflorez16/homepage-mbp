@@ -5,6 +5,7 @@ import {
   Heading,
   Text,
   chakra,
+  useColorModeValue
 } from '@chakra-ui/react'
 import { ScrollContext } from '../utils/scroll-observer'
 import { Section } from './section'
@@ -75,12 +76,15 @@ export const AboutMe = () => {
               <Text fontSize='md' fontWeight='normal'>
                 App Developer
               </Text>
+              <Text fontSize='md' fontWeight='normal'>
+                Automation Engineer
+              </Text>
             </Heading>
             <Box
               w={{ base: '100px', md: '150px' }}
               h={{ base: '100px', md: '150px' }}
               flexShrink={0}
-              borderColor='cyan.300'
+              borderColor={useColorModeValue('#222', 'smoothWhite')}
               borderWidth={2}
               borderStyle='solid'
               borderRadius='full'

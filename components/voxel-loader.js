@@ -19,7 +19,7 @@ export const ModelLoader = forwardRef(({ children }, ref) => (
     w={[280, 300, 380]}
     h={[280, 300, 380]}
     position='relative'
-    bg={useColorModeValue('#CCF2F4', 'hardDark')}
+    bg={useColorModeValue('ligth_beige', 'hardDark')}
   >
     {children}
   </Box>

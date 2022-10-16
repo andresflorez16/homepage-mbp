@@ -1,4 +1,3 @@
-import { useState, useCallback } from 'react'
 import { 
   Box,
   Heading,
@@ -11,20 +10,12 @@ import SliderContainer, { SliderItem } from './slider'
 import { skillsFrontend, skillsBackend } from '../utils/skills-files'
 
 const Skill = ({ skill, src, width }) => {
-  const [imageLoaded, setImageLoaded] = useState(false)
-
-  const handleImageLoaded = useCallback(() => {
-    setImageLoaded(true)
-  }, [])
-
-  return (
+   return (
     <Box>
       <Image 
         src={`/techs/${src}`} 
         alt={skill} 
         width={width} 
-        onLoad={handleImageLoaded}
-        opacity={imageLoaded ? '0' : '100'}
       />
       <Text>{skill}</Text>
     </Box>
@@ -34,15 +25,14 @@ const Skill = ({ skill, src, width }) => {
 export const Skills = () => {
   return (
     <Box
-      //bg={useColorModeValue('smoothTeal', '#111')}
-      bg={useColorModeValue('smoothTeal', 'smoothWhite')}
+      bg={useColorModeValue('light_blue', '#111')}
       minH='100vh'
       display='flex'
       justifyContent='center'
       alignItems='center'
       flexDir='column'
       w='100%'
-      color='#111'
+      color={useColorModeValue('#000', '#fff')}
     >
       <Section delay={0.3} w='100%' p={2}>
         <Heading variant='_title' textAlign='center'>
