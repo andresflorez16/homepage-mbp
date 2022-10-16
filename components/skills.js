@@ -1,3 +1,4 @@
+import { useState, useCallback } from 'react'
 import { 
   Box,
   Heading,
@@ -7,14 +8,28 @@ import {
 } from '@chakra-ui/react'
 import { Section } from './section'
 import SliderContainer, { SliderItem } from './slider'
-import { skillsFrontend, skillsBackend, skillsCloud } from '../utils/skills-files'
+import { skillsFrontend, skillsBackend } from '../utils/skills-files'
 
-const Skill = ({ skill, src, width }) => (
-  <Box>
-    <Image src={`/techs/${src}`} alt={skill} width={width} />
-    <Text>{skill}</Text>
-  </Box>
-)
+const Skill = ({ skill, src, width }) => {
+  const [imageLoaded, setImageLoaded] = useState(false)
+
+  const handleImageLoaded = useCallback(() => {
+    setImageLoaded(true)
+  }, [])
+
+  return (
+    <Box>
+      <Image 
+        src={`/techs/${src}`} 
+        alt={skill} 
+        width={width} 
+        onLoad={handleImageLoaded}
+        opacity={imageLoaded ? '0' : '100'}
+      />
+      <Text>{skill}</Text>
+    </Box>
+  )
+}
 
 export const Skills = () => {
   return (

@@ -24,7 +24,6 @@ const SliderContainer = ({ children, initialOffsetX, contentWidth }) => {
   const refContent = useRef(null)
 
   const enabled = innerWidth < contentWidth
-  console.log(enabled)
 
   useAnimationFrame(
     enabled,

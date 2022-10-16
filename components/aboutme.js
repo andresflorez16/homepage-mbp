@@ -1,4 +1,4 @@
-import { useRef, useContext } from 'react'
+import { useRef, useContext, useState, useCallback } from 'react'
 import Image from 'next/image'
 import { 
   Box,
@@ -11,10 +11,12 @@ import { Section } from './section'
 import { Scene } from './voxel'
 
 const ProfileImage = chakra(Image, {
-  shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
+  shouldForwardProp: prop => ['width', 'height', 'src', 'alt', 'onLoad'].includes(prop)
 })
 
 export const AboutMe = () => {
+  const [imageLoaded, setImageLoaded] = useState(false)
+  console.log(imageLoaded)
   const refContainer = useRef(null)
   const { scrollY } = useContext(ScrollContext)
 
@@ -25,6 +27,10 @@ export const AboutMe = () => {
   if (container) {
     progress = Math.min(1, scrollY / container.clientHeight)
   }
+
+  const handleImageLoaded = useCallback(() => {
+    setImageLoaded(true)
+  }, [])
 
   return (
     <Box
@@ -79,8 +85,18 @@ export const AboutMe = () => {
               borderWidth={2}
               borderStyle='solid'
               borderRadius='full'
+              transition='all 1s ease'
+              opacity={imageLoaded ? '100' : '0'}
+              transform={imageLoaded ? 'translateX(0px)' : 'translateX(20px)'}
             >
-              <ProfileImage src='/andrew.jpg' borderRadius='full' width='200%' height='200%' alt='Andrés' />
+              <ProfileImage
+                src='/andrew.jpg'
+                borderRadius='full'
+                width='200%'
+                height='200%'
+                onLoad={handleImageLoaded}
+                alt='Andrés' 
+              />
             </Box>
           </Box>
           <Box 
