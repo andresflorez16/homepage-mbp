@@ -8,6 +8,7 @@ export const Footer = () => {
       bg='transparent'
       w='100%'
       m='0 auto'
+      mb={5}
     >
       <Text
         textAlign='center'

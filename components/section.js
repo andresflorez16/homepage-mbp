@@ -7,7 +7,7 @@ const StyledDiv = chakra(motion.div, {
   }
 })
 
-export const Section = ({ children, delay = 0, w, p }) => {
+export const Section = ({ children, delay = 0, w, p, ...props }) => {
   return (
     <StyledDiv
       w={w}
@@ -16,6 +16,7 @@ export const Section = ({ children, delay = 0, w, p }) => {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, delay }}
       mb={6}
+      {...props}
     >
       {children}
     </StyledDiv>

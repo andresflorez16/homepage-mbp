@@ -1,4 +1,5 @@
 import { Box, Heading } from '@chakra-ui/react'
+import { Section } from '../components/section'
 
 const Works = () => {
   return (
@@ -11,7 +12,9 @@ const Works = () => {
       mt={{ base: '10', md: '0' }}
       p={15}
     >
-      <Heading>Works!</Heading>
+      <Section delay={0.3}>
+        <Heading>Works!</Heading>
+      </Section>
     </Box>
   )
 }
