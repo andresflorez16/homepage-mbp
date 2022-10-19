@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
         <SizeObserver>
           <Layout>
             <ScrollObserver>
-                <Component {...pageProps} />
+              <Component {...pageProps} />
             </ScrollObserver>
           </Layout>
         </SizeObserver>
