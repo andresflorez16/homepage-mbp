@@ -20,7 +20,7 @@ const Layout = ({ children, title }) => (
       {
         title && (
           <Head>
-            <title>{title} - Andres Florez</title>
+            <title>{title} | Andres Florez</title>
           </Head>
         )
       }

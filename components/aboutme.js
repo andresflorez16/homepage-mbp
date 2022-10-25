@@ -35,7 +35,7 @@ export const AboutMe = () => {
   return (
     <Box
       ref={refContainer}
-      minH={{ base: 'auto', md: '100vh' }}
+      minH='100vh'
       display='flex'
       flexDir={[ 'column', 'column', 'column', 'column', 'row' ]}
       justifyContent='center'
@@ -105,9 +105,9 @@ export const AboutMe = () => {
           <Box 
             m='0 auto' 
             mt={3} 
-            textAlign='justify'
+            textAlign='left'
           >
-            <Text fontSize={['sm', 'md', 'lg']}>Andrés is a freelance and full-stack developer who loves planning, designing and find ways to solve real-life problems with code, furthermore he has a knack for fast-learning and autonomous learning. When not online, he likes go to the gym, hang out, listen music, and watch movies/series.</Text>
+            <Text fontSize={['sm', 'md', 'lg']}>Andrés loves planning, designing and find ways to solve real-life problems with code, furthermore he has a knack for fast-learning and autonomous learning.</Text>
           </Box>
         </Section>
       </Box>

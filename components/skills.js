@@ -25,7 +25,7 @@ const Skill = ({ skill, src, width }) => {
 export const Skills = () => {
   return (
     <Box
-      bg={useColorModeValue('light_blue', '#111')}
+      bg={useColorModeValue('light3', '#333')}
       minH='100vh'
       display='flex'
       justifyContent='center'
@@ -35,11 +35,12 @@ export const Skills = () => {
       color={useColorModeValue('#000', '#fff')}
     >
       <Section delay={0.3} w='100%' p={2}>
-        <Heading variant='_title' textAlign='center'>
+        <Heading variant='_title' m={5} textAlign='center'>
           Skills
         </Heading>
         <Box
           textAlign='center'
+          mb={20}
         >
           <Text variant='_section_skills' m={5}>Frontend</Text>
           <SliderContainer

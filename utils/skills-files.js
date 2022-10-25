@@ -8,7 +8,7 @@ export const skillsFrontend = [
     skill: 'CSS'
   },
   {
-    path:'javascript.png',
+    path:'javascript.svg',
     skill: 'JavaScript'
   },
   {
