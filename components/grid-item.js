@@ -1,12 +1,14 @@
 import NextLink from 'next/link'
+import Image from 'next/image'
 import {
   Box,
   Text,
   LinkBox,
-  Image
 } from '@chakra-ui/react'
+import useImageLoaded from '../utils/useImageLoaded'
 
 export const WorkGridItem = ({ children, id, title, thumbnail }) => {
+  const { imageLoaded, handleImageLoaded } = useImageLoaded()
   return (
     <Box
       w='100%'
@@ -16,18 +18,24 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => {
         <LinkBox
           cursor='pointer'
         >
-          <Image
+          <Box
             width={400}
             height={232}
-            src={`/thumbnail/${thumbnail}`}
-            alt={title}
-            placeholder='blur'
-            loading='lazy'
-            borderRadius={12}
             boxShadow='2xl'
             _hover={{ filter: 'blur(2px)' }}
-            transition='filter .3s ease'
-          />
+            transition='all .3s ease'
+            opacity={imageLoaded ? '100' : '0'}
+            transform={imageLoaded ? 'scale(1)' : 'scale(0.1)'}
+          >
+            <Image
+              width={400}
+              height={232}
+              src={`/thumbnail/${thumbnail}`}
+              alt={title}
+              style={{ borderRadius: '12px' }}
+              onLoad={handleImageLoaded}
+            />
+          </Box>
           <Text variant='_subtitle'>{title}</Text>
           <Text>{children}</Text>
         </LinkBox>

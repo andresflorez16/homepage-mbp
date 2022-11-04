@@ -1,14 +1,10 @@
-import { useState, useCallback } from 'react'
 import NextLink from 'next/link'
 import Image from 'next/image'
 import { Box, Link} from '@chakra-ui/react'
+import useImageLoaded from '../utils/useImageLoaded'
 
 export const Logo = () => {
-  const [imageLoaded, setImageLoaded] = useState(false)
-
-  const handleImageLoaded = useCallback(() => {
-    setImageLoaded(true)
-  }, [])
+  const { imageLoaded, handleImageLoaded } = useImageLoaded()
 
   return (
     <Box

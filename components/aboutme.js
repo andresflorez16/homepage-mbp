@@ -1,4 +1,4 @@
-import { useRef, useContext, useState, useCallback } from 'react'
+import { useRef, useContext } from 'react'
 import Image from 'next/image'
 import { 
   Box,
@@ -8,6 +8,7 @@ import {
   useColorModeValue
 } from '@chakra-ui/react'
 import { ScrollContext } from '../utils/scroll-observer'
+import useImageLoaded from '../utils/useImageLoaded'
 import { Section } from './section'
 import { Scene } from './voxel'
 
@@ -16,7 +17,7 @@ const ProfileImage = chakra(Image, {
 })
 
 export const AboutMe = () => {
-  const [imageLoaded, setImageLoaded] = useState(false)
+  const { imageLoaded, handleImageLoaded } = useImageLoaded()
   const refContainer = useRef(null)
   const { scrollY } = useContext(ScrollContext)
 
@@ -28,11 +29,7 @@ export const AboutMe = () => {
     progress = Math.min(1, scrollY / container.clientHeight)
   }
 
-  const handleImageLoaded = useCallback(() => {
-    setImageLoaded(true)
-  }, [])
-
-  return (
+   return (
     <Box
       ref={refContainer}
       minH='100vh'

@@ -12,16 +12,24 @@ export const skillsFrontend = [
     skill: 'JavaScript'
   },
   {
+    path:'typescript.svg',
+    skill: 'TypeScript'
+  },
+  {
     path:'react.png',
     skill: 'ReactJS'
   },
   {
-    path:'next.png',
+    path:'nextjs.svg',
     skill: 'NextJS'
   }
 ]
 
 export const skillsBackend = [
+  {
+    path: 'python.png',
+    skill: 'Python'
+  },
   {
     path:'nodejs.png',
     skill: 'NodeJS'
