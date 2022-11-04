@@ -20,7 +20,7 @@ export const Layout = ({ children }) => {
 				<meta name='description' content="Andrés Florez Website" />
 				<meta property="og:site_name" content="Andrés Florez" />
 				<meta property="og:description" content="Andrés Florez Website" />
-				<meta property="og:image" content={`${originPath}/img/banner.png`} />
+				<meta property="og:image" content={`${originPath}/andrew.jpg`} />
         <link rel="apple-touch-icon" href="andres.png" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
