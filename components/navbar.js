@@ -7,7 +7,6 @@ import { LinkText } from './links'
 import { Logo } from './logo'
 
 export const Navbar = () => {
-
   return (
     <Box
       w='100%'
