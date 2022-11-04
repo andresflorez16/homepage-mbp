@@ -22,6 +22,7 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => {
             src={`/thumbnail/${thumbnail}`}
             alt={title}
             placeholder='blur'
+            loading='lazy'
             borderRadius={12}
             boxShadow='2xl'
             _hover={{ filter: 'blur(2px)' }}

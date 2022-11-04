@@ -10,6 +10,7 @@ export const Logo = () => {
           w={'180px'}
           h={'90px'}
           alt='Logo Andres Florez'
+          loading='lazy'
           m='-20px'
           mx={3}
           _hover={{ transform: 'scale(0.9)' }}

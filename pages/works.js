@@ -21,20 +21,24 @@ const Works = () => {
             columns={[1, 1, 2]}
             gap={8}
           >
-            <WorkGridItem
-              id='onboarding'
-              title='Onboarding Digital BBVA'
-              thumbnail='onboarding.png'
-            >
-              BBVA&apos;s Hackathon to create bank accounts
-            </WorkGridItem>
-            <WorkGridItem
-              id='plc-web'
-              title='PLC Web'
-              thumbnail='plc.png'
-            >
-              Application to analyze multiple PLC data
-            </WorkGridItem>
+            <Section delay={0.1}>
+              <WorkGridItem
+                id='onboarding'
+                title='Onboarding Digital BBVA'
+                thumbnail='onboarding.png'
+              >
+                BBVA&apos;s Hackathon to create bank accounts
+              </WorkGridItem>
+            </Section>
+            <Section delay={0.1}>
+              <WorkGridItem
+                id='plc-web'
+                title='PLC Web'
+                thumbnail='plc.png'
+              >
+                Application to analyze multiple PLC data
+              </WorkGridItem>
+            </Section>
           </SimpleGrid>
           <Divider m={5} />
           <Text m={5} fontSize={20}>Collaborations</Text>
@@ -42,20 +46,24 @@ const Works = () => {
             columns={[1, 1, 2]}
             gap={8}
           >
-            <WorkGridItem
-              id='aire-ciudadano'
-              title='Aire Ciudadano'
-              thumbnail='aireciudadano.png'
-            >
-              To monitoring air quality by low-cost sensors
-            </WorkGridItem>
-            <WorkGridItem
-              id='itaeditorial'
-              title='ItaEditorial'
-              thumbnail='itabooks.png'
-            >
-              Book publisher on the web
-            </WorkGridItem>
+            <Section delay={0.1}>
+              <WorkGridItem
+                id='aire-ciudadano'
+                title='Aire Ciudadano'
+                thumbnail='aireciudadano.png'
+              >
+                To monitoring air quality by low-cost sensors
+              </WorkGridItem>
+            </Section>
+            <Section delay={0.1}>
+              <WorkGridItem
+                id='itaeditorial'
+                title='ItaEditorial'
+                thumbnail='itabooks.png'
+              >
+                Book publisher on the web
+              </WorkGridItem>
+            </Section>
           </SimpleGrid>
         </Section>
       </Box>
