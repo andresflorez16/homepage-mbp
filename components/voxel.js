@@ -32,6 +32,7 @@ export const Scene = () => {
     }
   }, [renderer])
 
+  /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
     const { current: container } = containerRef
     if (container && !renderer) {

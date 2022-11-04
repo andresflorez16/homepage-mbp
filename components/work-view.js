@@ -1,7 +1,8 @@
 import { 
   Box,
   Text,
-  Image
+  Image,
+  Badge
 } from '@chakra-ui/react'
 
 export const WorkView = ({ path, title }) => {
@@ -12,7 +13,14 @@ export const WorkView = ({ path, title }) => {
         src={`/assets/${path}`}
         w={250}
         borderRadius='10px'
+        alt='thumbnail'
       />
     </Box>
   )
 }
+
+export const Meta = ({ children }) => (
+  <Badge colorScheme='green' fontSize='md' mr={2}>
+    {children}
+  </Badge>
+)

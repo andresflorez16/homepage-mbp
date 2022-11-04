@@ -10,7 +10,15 @@ function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider theme={theme}>
       <Fonts />
-      <AnimatePresence exitBeforeEnter initial={true}>
+      <AnimatePresence 
+        exitBeforeEnter 
+        initial={true}
+        onExitComplete={() => {
+          if (typeof window != 'undefined') {
+            window.scrollTo({ top: 0 })
+          }
+        }}
+      >
         <SizeObserver>
           <Layout>
             <ScrollObserver>

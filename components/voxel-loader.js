@@ -8,13 +8,14 @@ export const Loading = () => (
     display='grid'
     placeItems='center'
   >
-  <Spinner size='xl'/>
+    <Spinner size='xl'/>
   </Box>
 )
 
 export const ModelLoader = forwardRef(({ children }, ref) => (
   <Box
     ref={ref}
+    className='voxel'
     m='0 auto'
     w={[280, 300, 380]}
     h={[280, 300, 380]}
@@ -24,6 +25,7 @@ export const ModelLoader = forwardRef(({ children }, ref) => (
     {children}
   </Box>
 ))
+ModelLoader.displayName = 'ModelLoader'
 
 export const Loader = () => {
   return (

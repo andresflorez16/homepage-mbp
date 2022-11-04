@@ -22,39 +22,18 @@ const Works = () => {
             gap={8}
           >
             <WorkGridItem
-              id='aire-ciudadano'
-              title='Aire Ciudadano'
-              thumbnail='aireciudadano.png'
-            >
-              To monitoring air quality by low-cost sensors
-            </WorkGridItem>
-            <WorkGridItem
-              id='open-jira'
-              title='OpenJira'
-              thumbnail='openjira.png'
-            >
-              Similar Jira App with drag and drop entries
-            </WorkGridItem>
-            <WorkGridItem
               id='onboarding'
               title='Onboarding Digital BBVA'
               thumbnail='onboarding.png'
             >
-              BBVA's Hackathon to create bank accounts
+              BBVA&apos;s Hackathon to create bank accounts
             </WorkGridItem>
             <WorkGridItem
-              id='plc'
+              id='plc-web'
               title='PLC Web'
               thumbnail='plc.png'
             >
               Application to analyze multiple PLC data
-            </WorkGridItem>
-            <WorkGridItem
-              id='color-guess'
-              title='Color Guess'
-              thumbnail='color-guess.png'
-            >
-              Game to guess HEX color
             </WorkGridItem>
           </SimpleGrid>
           <Divider m={5} />
@@ -64,11 +43,18 @@ const Works = () => {
             gap={8}
           >
             <WorkGridItem
-              id='ita-editorial'
+              id='aire-ciudadano'
+              title='Aire Ciudadano'
+              thumbnail='aireciudadano.png'
+            >
+              To monitoring air quality by low-cost sensors
+            </WorkGridItem>
+            <WorkGridItem
+              id='itaeditorial'
               title='ItaEditorial'
               thumbnail='itabooks.png'
             >
-              Web publisher
+              Book publisher on the web
             </WorkGridItem>
           </SimpleGrid>
         </Section>

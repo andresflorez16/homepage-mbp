@@ -63,7 +63,7 @@ export const AboutMe = () => {
             mt={3}
             w={{ base: 'full' }}
           >
-            <Text color='#fff' fontSize={{ base: 15, xl: 17 }}>Hi, i'm an app developer based in Colombia!</Text>
+            <Text color='#fff' fontSize={{ base: 15, xl: 17 }}>Hi, i&apos;m an app developer based in Colombia!</Text>
           </Box>
           <Box
             m='0 auto'
