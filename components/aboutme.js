@@ -2,11 +2,14 @@ import { useRef, useContext } from 'react'
 import Image from 'next/image'
 import { 
   Box,
+  Button,
   Heading,
   Text,
   chakra,
+  Icon,
   useColorModeValue
 } from '@chakra-ui/react'
+import { IoArrowDownCircleSharp } from 'react-icons/io5'
 import { ScrollContext } from '../utils/scroll-observer'
 import useImageLoaded from '../utils/useImageLoaded'
 import { Section } from './section'
@@ -76,6 +79,31 @@ export const AboutMe = () => {
               <Text fontSize='md' fontWeight='normal'>
                 Automation Engineer
               </Text>
+              <Button
+                as='a'
+                href='cv/andres-florez-es.pdf'
+                variant='solid'
+                size='md'
+                mt={3}
+                mr={3}
+                colorScheme='orange'
+                rightIcon={<Icon as={IoArrowDownCircleSharp} />} 
+                download
+              >
+                CV es
+              </Button>
+              <Button
+                as='a'
+                href='cv/andres-florez-en.pdf'
+                variant='solid'
+                size='md'
+                mt={3}
+                colorScheme='orange'
+                rightIcon={<Icon as={IoArrowDownCircleSharp} />} 
+                download
+              >
+                CV en
+              </Button>
             </Heading>
             <Box
               w={{ base: '100px', md: '150px' }}
