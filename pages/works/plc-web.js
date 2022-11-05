@@ -12,13 +12,14 @@ import { Meta } from '../../components/work-view'
 
 const PlcWeb = () => {
   return (
-    <Layout title='Plc Web'>
+    <Layout title='PLC Web'>
       <Box
         display='flex'
         alignItems='center'
         justifyContent='center'
         minH='100vh'
         py={5}
+        mt={10}
       >
         <Section delay={0.3}>
           <Heading variant='_title' textAlign='center'>PLC Web</Heading>
