@@ -16,10 +16,11 @@ export const Scene = () => {
     new THREE.Vector3(
       20 * Math.sin(0.2 * Math.PI),
       18,
-      20 * Math.cos(0,2 * Math.PI)
+      20 * Math.cos(0, 2 * Math.PI)
     )
   )
   const [scene] = useState(new THREE.Scene())
+  // eslint-disable-next-line no-unused-vars
   const [_controls, setControls] = useState()
 
   const handleResize = useCallback(() => {

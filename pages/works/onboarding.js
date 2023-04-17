@@ -1,7 +1,6 @@
-import { 
+import {
   Box,
   Heading,
-  Link,
   Text,
   Image,
   List,
@@ -46,7 +45,7 @@ const Onboarding = () => {
                 <span>NextJS, Styled Components, Firebase</span>
               </ListItem>
             </List>
-            <Image 
+            <Image
               src='/thumbnail/onboarding2.png'
               alt='Onboarding'
               w='100%'
@@ -55,7 +54,7 @@ const Onboarding = () => {
               boxShadow='2xl'
               my={5}
             />
-            <Image 
+            <Image
               src='/thumbnail/onboarding3.png'
               alt='Onboarding'
               w='100%'

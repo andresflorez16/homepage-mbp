@@ -1,7 +1,7 @@
-import { 
-  Box, 
-  Heading, 
-  Image, 
+import {
+  Box,
+  Heading,
+  Image,
   Text,
   List,
   Link,
@@ -25,14 +25,14 @@ const AireCiudadano = () => {
       >
         <Section delay={0.3}>
           <Heading variant='_title' textAlign='center'>Aire Ciudadano</Heading>
-          <Box 
+          <Box
             m='0 auto'
             w={{ base: '90%', md: '50%' }}
           >
-            <Image 
-              src='/thumbnail/aireciudadano.png' 
+            <Image
+              src='/thumbnail/aireciudadano.png'
               alt='AireCiudadano'
-              w='100%' 
+              w='100%'
               borderRadius={12}
               placeholder='blur'
               boxShadow='2xl'
@@ -51,31 +51,31 @@ const AireCiudadano = () => {
                 </span>
               </ListItem>
               <ListItem>
-                <Meta>Stack</Meta> 
-                <span>HTML, CSS, JavaScript, NodeJS, ExpressJS, Firebase.</span> 
+                <Meta>Stack</Meta>
+                <span>HTML, CSS, JavaScript, NodeJS, ExpressJS, Firebase.</span>
               </ListItem>
             </List>
-            <Image 
-              src='/thumbnail/aireciudadano2.png' 
-              w='100%' 
+            <Image
+              src='/thumbnail/aireciudadano2.png'
+              w='100%'
               alt='thumbnail'
               borderRadius={12}
               placeholder='blur'
               boxShadow='2xl'
               my={5}
             />
-            <Image 
-              src='/thumbnail/aireciudadano3.png' 
-              w='100%' 
+            <Image
+              src='/thumbnail/aireciudadano3.png'
+              w='100%'
               alt='thumbnail'
               borderRadius={12}
               placeholder='blur'
               boxShadow='2xl'
               my={5}
             />
-            <Image 
-              src='/thumbnail/aireciudadano4.png' 
-              w='100%' 
+            <Image
+              src='/thumbnail/aireciudadano4.png'
+              w='100%'
               alt='thumbnail'
               borderRadius={12}
               placeholder='blur'

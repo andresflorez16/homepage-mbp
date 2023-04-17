@@ -1,4 +1,4 @@
-import { 
+import {
   Box,
   Heading,
   Link,
@@ -7,7 +7,7 @@ import {
   ListItem,
   Text
 } from '@chakra-ui/react'
-import { ExternalLinkIcon} from '@chakra-ui/icons'
+import { ExternalLinkIcon } from '@chakra-ui/icons'
 import Layout from '../../components/layouts/article'
 import { Section } from '../../components/section'
 import { Meta } from '../../components/work-view'
@@ -46,7 +46,7 @@ const ItaEditorial = () => {
                 <Meta>WEBSITE</Meta>
                 <span>
                   <Link href='https://app.itabooks.com'>
-                    https://app.itabooks.com <ExternalLinkIcon mb={1}/>
+                    https://app.itabooks.com <ExternalLinkIcon mb={1} />
                   </Link>
                 </span>
               </ListItem>
@@ -59,7 +59,7 @@ const ItaEditorial = () => {
                 <span>iOS, Android, Web</span>
               </ListItem>
             </List>
-            <Image 
+            <Image
               src='/thumbnail/itabooks2.png'
               w='100%'
               alt='thumbnail'
@@ -68,7 +68,7 @@ const ItaEditorial = () => {
               boxShadow='2xl'
               my={5}
             />
-            <Image 
+            <Image
               src='/thumbnail/itabooks3.png'
               w='100%'
               alt='thumbnail'
@@ -77,7 +77,7 @@ const ItaEditorial = () => {
               boxShadow='2xl'
               my={5}
             />
-            <Image 
+            <Image
               src='/thumbnail/itabooks4.png'
               w='100%'
               alt='thumbnail'

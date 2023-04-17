@@ -1,26 +1,26 @@
 export const skillsFrontend = [
   {
-    path:'html.png',
+    path: 'html.png',
     skill: 'HTML'
   },
   {
-    path:'css.png',
+    path: 'css.png',
     skill: 'CSS'
   },
   {
-    path:'javascript.svg',
+    path: 'javascript.svg',
     skill: 'JavaScript'
   },
   {
-    path:'typescript.svg',
+    path: 'typescript.svg',
     skill: 'TypeScript'
   },
   {
-    path:'react.png',
+    path: 'react.png',
     skill: 'ReactJS'
   },
   {
-    path:'nextjs.svg',
+    path: 'nextjs.svg',
     skill: 'NextJS'
   }
 ]
@@ -31,38 +31,38 @@ export const skillsBackend = [
     skill: 'Python'
   },
   {
-    path:'nodejs.png',
+    path: 'nodejs.png',
     skill: 'NodeJS'
   },
   {
-    path:'expressjs.png',
+    path: 'expressjs.png',
     skill: 'ExpressJS'
   },
   {
-    path:'mongodb.png',
+    path: 'mongodb.png',
     skill: 'MongoDB'
   },
   {
-    path:'mysql.png',
+    path: 'mysql.png',
     skill: 'MySQL'
   },
   {
-    path:'firebase.png',
+    path: 'firebase.png',
     skill: 'Firebase'
   },
   {
-    path:'google.png',
+    path: 'google.png',
     skill: 'GCloud'
-  },
+  }
 ]
 
 export const skillsCloud = [
   {
-    path:'firebase.png',
+    path: 'firebase.png',
     skill: 'Firebase'
   },
   {
-    path:'google.png',
+    path: 'google.png',
     skill: 'GCloud'
-  },
+  }
 ]

@@ -1,6 +1,6 @@
 import { useRef, useContext } from 'react'
 import Image from 'next/image'
-import { 
+import {
   Box,
   Button,
   Heading,
@@ -25,19 +25,19 @@ export const AboutMe = () => {
   const { scrollY } = useContext(ScrollContext)
 
   let progress = 0
-  
+
   const { current: container } = refContainer
 
   if (container) {
     progress = Math.min(1, scrollY / container.clientHeight)
   }
 
-   return (
+  return (
     <Box
       ref={refContainer}
       minH='100vh'
       display='flex'
-      flexDir={[ 'column', 'column', 'column', 'column', 'row' ]}
+      flexDir={['column', 'column', 'column', 'column', 'row']}
       justifyContent='center'
       alignItems='center'
       position={{ base: 'static', xl: 'sticky' }}
@@ -87,7 +87,7 @@ export const AboutMe = () => {
                 mt={3}
                 mr={3}
                 colorScheme='orange'
-                rightIcon={<Icon as={IoArrowDownCircleSharp} />} 
+                rightIcon={<Icon as={IoArrowDownCircleSharp} />}
                 download
               >
                 CV es
@@ -99,7 +99,7 @@ export const AboutMe = () => {
                 size='md'
                 mt={3}
                 colorScheme='orange'
-                rightIcon={<Icon as={IoArrowDownCircleSharp} />} 
+                rightIcon={<Icon as={IoArrowDownCircleSharp} />}
                 download
               >
                 CV en
@@ -123,13 +123,13 @@ export const AboutMe = () => {
                 width='200%'
                 height='200%'
                 onLoad={handleImageLoaded}
-                alt='Andrés' 
+                alt='Andrés'
               />
             </Box>
           </Box>
-          <Box 
-            m='0 auto' 
-            mt={3} 
+          <Box
+            m='0 auto'
+            mt={3}
             textAlign='left'
           >
             <Text fontSize={['sm', 'md', 'lg']}>Andrés loves planning, designing and find ways to solve real-life problems with code, furthermore he has a knack for fast-learning and autonomous learning.</Text>

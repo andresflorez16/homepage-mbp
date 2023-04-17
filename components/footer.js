@@ -2,7 +2,7 @@ import { Text, Box } from '@chakra-ui/react'
 
 export const Footer = () => {
   return (
-    <Box 
+    <Box
       position='absolute'
       bottom={0}
       bg='transparent'

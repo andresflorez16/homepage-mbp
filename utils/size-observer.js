@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState} from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 
 export const SizeContext = React.createContext({ innerWidth: 0 })
 

@@ -1,4 +1,4 @@
-import { forwardRef} from 'react'
+import { forwardRef } from 'react'
 import { Box, Spinner, useColorModeValue } from '@chakra-ui/react'
 
 export const Loading = () => (
@@ -8,7 +8,7 @@ export const Loading = () => (
     display='grid'
     placeItems='center'
   >
-    <Spinner size='xl'/>
+    <Spinner size='xl' />
   </Box>
 )
 

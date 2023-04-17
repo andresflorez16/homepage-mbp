@@ -1,4 +1,4 @@
-import { 
+import {
   Box,
   Heading,
   Text,
@@ -10,12 +10,12 @@ import SliderContainer, { SliderItem } from './slider'
 import { skillsFrontend, skillsBackend } from '../utils/skills-files'
 
 const Skill = ({ skill, src, width }) => {
-   return (
+  return (
     <Box>
-      <Image 
-        src={`/techs/${src}`} 
-        alt={skill} 
-        width={width} 
+      <Image
+        src={`/techs/${src}`}
+        alt={skill}
+        width={width}
       />
       <Text>{skill}</Text>
     </Box>
@@ -48,7 +48,7 @@ export const Skills = () => {
             initialOffsetX={0}
           >
             {
-              skillsFrontend.map(( skill, i ) => (
+              skillsFrontend.map((skill, i) => (
                 <SliderItem width={100} key={i}>
                   <Skill width={100} skill={skill.skill} src={skill.path} />
                 </SliderItem>
@@ -65,7 +65,7 @@ export const Skills = () => {
             initialOffsetX={0}
           >
             {
-              skillsBackend.map(( skill, i ) => (
+              skillsBackend.map((skill, i) => (
                 <SliderItem width={100} key={i}>
                   <Skill width={100} skill={skill.skill} src={skill.path} />
                 </SliderItem>

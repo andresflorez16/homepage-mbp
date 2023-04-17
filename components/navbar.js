@@ -1,6 +1,6 @@
-import { 
+import {
   Box,
-  useColorModeValue,
+  useColorModeValue
 } from '@chakra-ui/react'
 import { ToggleButton } from './toggle-button'
 import { LinkText } from './links'

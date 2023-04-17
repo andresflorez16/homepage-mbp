@@ -1,6 +1,6 @@
 import NextLink from 'next/link'
 import Image from 'next/image'
-import { Box, Link} from '@chakra-ui/react'
+import { Box, Link } from '@chakra-ui/react'
 import useImageLoaded from '../utils/useImageLoaded'
 
 export const Logo = () => {
@@ -19,8 +19,8 @@ export const Logo = () => {
         <Link>
           <Image
             src='/logo.png'
-            width={'180px'}
-            height={'90px'}
+            width='180px'
+            height='90px'
             alt='Logo Andres Florez'
             onLoad={handleImageLoaded}
           />

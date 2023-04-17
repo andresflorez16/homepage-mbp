@@ -3,7 +3,7 @@ import Image from 'next/image'
 import {
   Box,
   Text,
-  LinkBox,
+  LinkBox
 } from '@chakra-ui/react'
 import useImageLoaded from '../utils/useImageLoaded'
 

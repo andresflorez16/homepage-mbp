@@ -10,10 +10,11 @@ const LinkContainer = ({ children, path }) => {
       <Link
         textDecor={isPath ? 'underline' : 'none'}
         fontWeight='bold'
-      >{children}</Link>
+      >{children}
+      </Link>
     </NextLink>
   )
-} 
+}
 
 export const LinkText = ({ children, path }) => {
   return (

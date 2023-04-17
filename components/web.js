@@ -1,5 +1,5 @@
 import NextLink from 'next/link'
-import { 
+import {
   Box,
   Heading,
   Button,
@@ -9,7 +9,7 @@ import {
   Text,
   SimpleGrid
 } from '@chakra-ui/react'
-import { 
+import {
   IoLogoGithub,
   IoLogoTwitter,
   IoLogoInstagram,
@@ -19,10 +19,10 @@ import {
 import { Section } from './section'
 
 const AppProfile = ({ app, profile, url }) => (
-  <Link 
-    href={url} 
+  <Link
+    href={url}
     target='_blank'
-    textAlign={{ md: 'center' }}
+    textAlign={{ md: 'center' }} rel='noreferrer'
   >
     <Button
       m='0 auto'
@@ -79,14 +79,14 @@ export const Web = () => {
         </SimpleGrid>
         <Box textAlign='center' mt={10}>
           <NextLink href='/works'>
-              <Button
-                variant='solid'
-                size='lg'
-                colorScheme='orange'
-                rightIcon={<Icon as={IoArrowRedoCircleSharp} />} 
-              >
-                Works
-              </Button>
+            <Button
+              variant='solid'
+              size='lg'
+              colorScheme='orange'
+              rightIcon={<Icon as={IoArrowRedoCircleSharp} />}
+            >
+              Works
+            </Button>
           </NextLink>
         </Box>
       </Section>

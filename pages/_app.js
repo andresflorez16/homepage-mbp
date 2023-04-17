@@ -6,15 +6,15 @@ import Fonts from '../components/fonts'
 import ScrollObserver from '../utils/scroll-observer'
 import SizeObserver from '../utils/size-observer'
 
-function MyApp({ Component, pageProps }) {
+function MyApp ({ Component, pageProps }) {
   return (
     <ChakraProvider theme={theme}>
       <Fonts />
-      <AnimatePresence 
-        exitBeforeEnter 
-        initial={true}
+      <AnimatePresence
+        exitBeforeEnter
+        initial
         onExitComplete={() => {
-          if (typeof window != 'undefined') {
+          if (typeof window !== 'undefined') {
             window.scrollTo({ top: 0 })
           }
         }}

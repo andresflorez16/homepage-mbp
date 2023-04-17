@@ -1,4 +1,4 @@
-import { 
+import {
   Box,
   Heading,
   Text,
@@ -27,7 +27,7 @@ const PlcWeb = () => {
             m='0 auto'
             w={{ base: '90%', md: '50%' }}
           >
-            <Image 
+            <Image
               src='/thumbnail/plc.png'
               alt='plc-web'
               w='100%'
