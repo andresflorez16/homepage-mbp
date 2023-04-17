@@ -1,3 +1,9 @@
 # Andrés Florez first homepage
+[Andrés Florez](https://andresflorez.vercel.app) Its my homepage with my projects, experience and a little about me.
 
-## This was my first homepage build with NextJS, ChakraUI
+## Technologies
+
+- React NextJS
+- Chakra UI
+- Framer Motion
+- ThreeJS
