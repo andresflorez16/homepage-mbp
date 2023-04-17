@@ -1,13 +1,10 @@
-import NextLink from 'next/link'
-import { 
+import {
   Box,
   Heading,
-  useColorModeValue,
-  Link
+  useColorModeValue
 } from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Section } from './section'
-import { ExperienceSection, ExperienceYear } from './experience-item'
+import ExperienceItem from './experience-item'
 
 export const Experience = () => {
   return (
@@ -18,9 +15,9 @@ export const Experience = () => {
       justifyContent='center'
       alignItems='center'
     >
-      <Section 
+      <Section
         delay={0.3}
-        w={{ base: 'full', md: '60%' }}
+        w={{ base: 'full', md: '70%' }}
       >
         <Heading variant='_title' textAlign='center' mb={10}>
           Experience
@@ -29,43 +26,32 @@ export const Experience = () => {
           w='100%'
           px={3}
         >
-          <ExperienceSection>
-            <ExperienceYear>2021</ExperienceYear>
+          <ExperienceItem year='2023 - Present'>
+            Senior Developer React at Gestión de Seguridad Electrónica GSE. In charge of different projects like microservices, web applications and others. Also supervision of junior devs
+          </ExperienceItem>
+          <ExperienceItem year='2023'>
+            Development of an inventory management web application for a bricks company
+          </ExperienceItem>
+          <ExperienceItem
+            year='2022'
+            href='https://link.springer.com/chapter/10.1007/978-3-031-20611-5_37'
+            alt='"A Machine Learning Based Command Voice Recognition Interface"'
+          >
+            Researcher at La Salle University in the application of scientific paper to Springer database by WEA 2022, called
+          </ExperienceItem>
+          <ExperienceItem year='2022' href='/works/onboarding' alt='Onboarding Digital'>
+            Participant at BBVA&apos;s Hackathon about bank accounts
+          </ExperienceItem>
+          <ExperienceItem year='2022' href='/works/itaeditorial' alt='ItaEditorial'>
+            Full-Stack developer at ItaEditorial for the implementation of a web, server and app mobile to publish books from anywhere
+          </ExperienceItem>
+          <ExperienceItem year='2021' href='/works/aire-ciudadano' alt='Aire Ciudadano'>
             Full-Stack developer at La Salle University for the implementation of a low-cost sensor monitoring application
-            <NextLink href='/works/aire-ciudadano'>
-              <Link ml={2}>
-                Aire Ciudadano <ExternalLinkIcon />
-              </Link>
-            </NextLink>
-          </ExperienceSection>
-          <ExperienceSection>
-            <ExperienceYear>2021-2022</ExperienceYear>
+          </ExperienceItem>
+          <ExperienceItem year='2021-2022'>
             Application developer intern at Schlumberger for the implementation of multiple business applications for different work areas.
-          </ExperienceSection>
-          <ExperienceSection>
-            <ExperienceYear>2022</ExperienceYear>
-            Full-Stack developer at 
-            <NextLink href='/works/itaeditorial'>
-              <Link mx={2}>
-                ItaEditorial <ExternalLinkIcon />
-              </Link>
-            </NextLink>
-            for the implementation of a web, server and app mobile to publish books from anywhere
-          </ExperienceSection>
-          <ExperienceSection>
-            <ExperienceYear>2022</ExperienceYear>
-            Implementation of an app to BBVA&apos;s Hackathon to create bank accounts
-            <NextLink href='/works/onboarding'>
-              <Link ml={2}>
-                Onboarding Digital <ExternalLinkIcon />
-              </Link>
-            </NextLink>
-          </ExperienceSection>
-          <ExperienceSection>
-            <ExperienceYear>2022</ExperienceYear>
-            Development and implementation of an inventory management web application for a company
-            </ExperienceSection>
-          </Box>
+          </ExperienceItem>
+        </Box>
       </Section>
     </Box>
   )
